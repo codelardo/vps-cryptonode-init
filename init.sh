@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 echo "Configurando memoria swap"
 sudo dd if=/dev/zero of=/var/swap.img bs=4096k count=1000
