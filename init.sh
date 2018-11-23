@@ -12,4 +12,11 @@ echo "Actualizando el sistema"
 apt-get update && dist-upgrade
 
 echo "Instalando programas"
-apt-get -y install build-essential autoconf automake git htop
+sudo apt-get -y install build-essential autoconf libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils git htop
+sudo apt-get -y install libboost-all-dev
+sudo apt-get -y install software-properties-common
+sudo add-apt-repository -y ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get -y install libdb4.8-dev libdb4.8++-dev
+sudo apt-get -y install libminiupnpc-dev
+sudo apt-get -y install libzmq3-dev
