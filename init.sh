@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Configurando memoria swap"
-sudo dd if=/dev/zero of=/var/swap.img bs=4096k count=1000
+sudo dd if=/dev/zero of=/var/swap.img bs=2048k count=1000
 sudo mkswap /var/swap.img
 sudo swapon /var/swap.img
 sudo chmod 0600 /var/swap.img
